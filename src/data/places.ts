@@ -1,4 +1,22 @@
+import andamanNicobarImage from '../../public/images/andaman-nicobar.jpg';
+import goldenTempleImage from '../../public/images/golden-temple.jpg';
+import agraFortImage from '../../public/images/agra-fort.jpg';
+import shimlaImage from '../../public/images/shimla.jpg';
+import jaisalmerImage from '../../public/images/jaisalmer.jpg';
+import darjeelingImage from '../../public/images/darjeeling.jpg';
+import rishikeshImage from '../../public/images/rishikesh.jpg';
 import ladakhImage from '../../public/images/ladakh.jpg';
+import varanasiImage from '../../public/images/varanasi.jpg';
+import keralaBackwatersImage from '../../public/images/kerala.jpg';
+import jaipurImage from '../../public/images/jaipur.jpg';
+import himachalBackpackingImage from '../../public/images/himachal-backpacking.jpg';
+import himachalHoneymoonPocketImage from '../../public/images/himachal-honeymoon-pocket.jpg';
+import himachalCircuitImage from '../../public/images/himachal-circuit.jpg';
+import goaImage from '../../public/images/goa.jpg';
+import udaipurImage from '../../public/images/udaipur.jpg';
+import kashmirImage from '../../public/images/Kashmir.jpg';
+import memorableHimachalImage from '../../public/images/memorable-himachal.jpg';
+import himachalStudentSpecialImage from '../../public/images/Manali.jpg';
 export interface Place {
   id: string;
   name: string;
@@ -33,7 +51,7 @@ export const places: Place[] = [
     startingRate: '6999/person',
     para: "Hill Stations & Valleys",
     description: 'Kullu, Manali, Shimla, Kasol, Kufri, Rohtang Pass, Hadimba Temple',
-    image: '../../public/images/Manali.jpg',
+    image: himachalStudentSpecialImage,
     highlights: ['SnowFall', 'Vashisht Temple', 'Fagu Valley', 'Mall Road', 'Church'],
     bestTime: 'April to March',
     duration: '5 Nights / 6 Days',
@@ -90,7 +108,7 @@ export const places: Place[] = [
     startingRate: '9999/person',
     para: 'Colonial Streets and Snow-kissed Hills',
     description: 'Embark on a 6-day Himachal backpacking adventure covering Shimla, Kufri, Manali, Solang Valley, Kullu, and Kasol. Start with a scenic drive from Delhi to Shimla, explore colonial streets and snow-kissed hills, then head to Manali for local sights and adventure in Solang Valley.',
-    image: '../../public/images/memorable-himachal.jpg',
+    image: memorableHimachalImage,
     highlights: ['Mall Road Shimla', 'Jakhu Temple', 'Solang Valley Adventures', 'Kasol Cafes'],
     bestTime: 'April to March',
     duration: '5 Nights / 6 Days',
@@ -149,7 +167,7 @@ export const places: Place[] = [
     startingRate: '12499/person',
     para: 'Experience the Magic of Kashmir',
     description: 'Get ready to experience the magic of Kashmir, often known as "Paradise on Earth." This unforgettable journey will take you through breathtaking landscapes, serene lakes, lush valleys, and historic wonders that will leave you in awe. Imagine starting your day with a peaceful shikara ride on the beautiful Dal Lake, watching the morning sun reflect off the still waters. Stroll through vibrant local markets filled with colorful handicrafts, spices, and the warm smiles of the Kashmiri people. Explore charming hill stations, wander through flower-filled gardens, and soak in the pure mountain air. Along the way, you\'ll discover the rich heritage, culture, and traditions that make Kashmir truly unique. Whether you’re seeking adventure, looking to connect with nature, or simply wanting a peaceful escape, this journey offers the perfect blend of it all. Come, lose yourself in the timeless beauty of Kashmir — an experience you\'ll treasure forever.',
-    image: '../../public/images/Kashmir.jpg',
+    image: kashmirImage,
     highlights: ['Relaxing Shikara ride on Dal Lake', 'Exploring Mughal Gardens in Srinagar', 'Adventure activities in Bhaderwah', 'Visiting scenic spots like Betaab Valley and Aru Valley', 'Experiencing the charm of Patnitop', 'Exploring historic sites in Baramulla', 'Comfortable accommodations and guided sightseeing'],
     bestTime: 'April to March',
     duration: '5 Nights / 6 Days',
@@ -206,7 +224,7 @@ export const places: Place[] = [
     startingRate: '7999/person',
     para: 'City of Lakes and Palaces',
     description: 'Known as the City of Lakes, Udaipur is renowned for its romantic settings, majestic palaces, and beautiful lakes. The city offers a perfect blend of natural beauty and royal architecture.',
-    image: 'https://images.unsplash.com/photo-1706961121527-4017856774c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxVZGFpcHVyJTIwcGFsYWNlJTIwSW5kaWF8ZW58MXx8fHwxNzY0MDg1MzI3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: udaipurImage,
     highlights: ['Chittorgarh', 'Mount Abu', 'Udaipur', 'Nathdwara Temple', 'Chittorgarh Fort', 'Lake Pichola', 'Fateh Sagar Lake', 'Bagore ki Haveli'],
     bestTime: 'October to March',
     duration: '4 Nights / 5 Days',
@@ -270,7 +288,7 @@ export const places: Place[] = [
     para: 'Sun, Sand, and Sea',
     state: 'Goa',
     description: 'Goa is famous for its pristine beaches, Portuguese heritage, vibrant nightlife, and laid-back atmosphere. From the bustling shores of Baga to the serene beaches of Palolem, Goa offers something for every traveler.',
-    image: 'https://images.unsplash.com/photo-1663848018507-accf7c6a2ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxHb2ElMjBiZWFjaCUyMEluZGlhfGVufDF8fHx8MTc2NDA4NTMyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: goaImage,
     highlights: ['Beautiful beaches', 'Portuguese architecture', 'Water sports', 'Seafood cuisine'],
     bestTime: 'April to March',
     duration: '4 Nights / 5 Days',
@@ -353,7 +371,7 @@ export const places: Place[] = [
     para: 'Enjoy Rafting, Trekking, and Bonfire Nights',
     state: 'Himachal Pradesh',
     description: 'Embark on a stunning 9-day journey through the best of Himachal Pradesh — from the colonial charm of Shimla and the snowy serenity of Manali to the spiritual calm of Dharamshala and the lush landscapes of Dalhousie. Explore adventure hotspots like Solang Valley, Atal Tunnel, and Kullu, while unwinding in scenic retreats like Kasol and Khajjiar. From riverside cafés to Himalayan monasteries, every day brings something beautiful and new.',
-    image: '../../public/images/himachal-circuit.jpg',
+    image: himachalCircuitImage,
     highlights: ['Beautiful beaches', 'Portuguese architecture', 'Water sports', 'Seafood cuisine'],
     bestTime: 'April to March',
     duration: '8 Nights / 9 Days',
@@ -429,7 +447,7 @@ export const places: Place[] = [
     startingRate: '33499/couple',
     para: 'Romantic Getaway in the Himalayas',
     description: 'Experience a romantic getaway in the Himalayas with our Himachal Honeymoon Pocket tour. Explore the charming hill stations of Shimla and Manali, indulge in cozy stays, and create unforgettable memories amidst breathtaking landscapes.',
-    image: '../../public/images/himachal-honeymoon-pocket.jpg',
+    image: himachalHoneymoonPocketImage,
     highlights: ['Romantic stays', 'Scenic landscapes', 'Cozy bonfire nights', 'Couple activities'],
     bestTime: 'April to March',
     duration: '4 Nights / 5 Days',
@@ -480,7 +498,7 @@ export const places: Place[] = [
     para: 'Mall Roads, Explore hidden Waterfalls',
     state: 'Himachal Pradesh',
     description: 'Stroll through Mall Roads, explore hidden waterfalls, visit iconic temples, and trek to stunning valleys, From snow-draped peaks in Solang to the spiritual calm of the Golden Temple, this trip blends nature, culture, and adventure.',
-    image: '../../public/images/himachal-backpacking.jpg',
+    image: himachalBackpackingImage,
     highlights: ['Kufri', 'Green Valley', 'Mall Road', 'St. Christ Church', 'The Ridge', 'Scandal Point'],
     bestTime: 'April to March',
     duration: '7 Nights / 8 Days',
@@ -549,7 +567,7 @@ export const places: Place[] = [
     para: 'The Pink City of India',
     state: 'Rajasthan',
     description: 'Jaipur is the capital and largest city of Rajasthan. Known as the Pink City due to the color of its buildings, Jaipur is famous for its magnificent palaces, forts, and vibrant culture. The city offers a perfect blend of history, architecture, and royal heritage.',
-    image: '../../public/images/jaipur.jpg',
+    image: jaipurImage,
     highlights: ['Hawa Mahal', 'Amber Fort', 'City Palace', 'Jantar Mantar'],
     bestTime: 'April to March',
     duration: '2 Nights / 3 Days',
@@ -621,7 +639,7 @@ export const places: Place[] = [
     para: 'Houseboat Cruise in Gods Own Country',
     state: 'Kerala',
     description: 'The Kerala backwaters are a chain of brackish lagoons and lakes lying parallel to the Arabian Sea coast. A houseboat cruise through these serene waters offers a unique glimpse into the traditional Kerala lifestyle, lush greenery, and tranquil beauty.',
-    image: '../../public/images/kerala-backwaters.jpg',
+    image: keralaBackwatersImage,
     highlights: ['Houseboat cruises', 'Traditional Kerala cuisine', 'Village life', 'Coconut groves'],
     bestTime: 'April to March',
     duration: '2 Nights / 3 Days',
@@ -694,7 +712,7 @@ export const places: Place[] = [
     para: 'Spiritual Capital of India',
     state: 'Uttar Pradesh',
     description: 'Varanasi is one of the oldest living cities in the world and the spiritual capital of India. Located on the banks of the Ganges River, it is famous for its ghats, temples, and the evening Ganga Aarti ceremony.',
-    image: '../../public/images/varanasi.jpg',
+    image: varanasiImage,
     highlights: ['Ganges ghats', 'Ganga Aarti', 'Kashi Vishwanath Temple', 'Boat rides'],
     bestTime: 'April to March',
     duration: '2 Nights / 3 Days',
@@ -886,7 +904,7 @@ export const places: Place[] = [
     para: 'Yoga Capital of the World',
     state: 'Uttarakhand',
     description: 'Rishikesh is the yoga capital of the world and a spiritual hub situated on the banks of the Ganges River. It is famous for yoga ashrams, adventure sports, and beautiful temples.',
-    image: '../../public/images/rishikesh.jpg',
+    image: rishikeshImage,
     highlights: ['Laxman Jhula', 'River rafting', 'Yoga retreats', 'Evening Aarti'],
     bestTime: 'April to March',
     duration: '3 Nights / 4 Days',
@@ -972,7 +990,7 @@ export const places: Place[] = [
     para: 'Queen of the Hills',
     state: 'West Bengal',
     description: 'Darjeeling is a charming hill station famous for its tea gardens, stunning views of the Himalayas, and the UNESCO World Heritage Toy Train. The town offers a perfect escape into nature.',
-    image: '../../public/images/darjeeling.jpg',
+    image: darjeelingImage,
     highlights: ['Tea gardens', 'Tiger Hill sunrise', 'Toy Train ride', 'Kanchenjunga views'],
     bestTime: 'April to March',
     duration: '3 Nights / 4 Days',
@@ -1057,7 +1075,7 @@ export const places: Place[] = [
     para: 'The Golden City',
     state: 'Rajasthan',
     description: 'Known as the Golden City, Jaisalmer rises from the Thar Desert like a mirage. The city is famous for its yellow sandstone architecture, camel safaris, and the magnificent Jaisalmer Fort.',
-    image: '../../public/images/jaisalmer.jpg',
+    image: jaisalmerImage,
     highlights: ['Jaisalmer Fort', 'Sam Sand Dunes', 'Camel safari', 'Desert camping'],
     bestTime: 'April to March',
     duration: '2 Nights / 3 Days',
@@ -1133,7 +1151,7 @@ export const places: Place[] = [
     para: 'Queen of Hill Stations',
     state: 'Himachal Pradesh',
     description: 'Shimla, the Queen of Hill Stations, was the summer capital of British India. With its colonial architecture, pleasant weather, and scenic beauty, it remains a popular tourist destination.',
-    image: '../../public/images/shimla.jpg',
+    image: shimlaImage,
     highlights: ['Mall Road', 'Jakhu Temple', 'Toy Train', 'Colonial architecture'],
     bestTime: 'April to March',
     duration: '2 Nights / 3 Days',
@@ -1207,7 +1225,7 @@ export const places: Place[] = [
     para: 'Historic Mughal Fortress',
     state: 'Uttar Pradesh',
     description: 'Agra Fort is a historical fort and UNESCO World Heritage Site. This magnificent red sandstone fortress served as the main residence of the Mughal emperors and offers stunning architecture and rich history.',
-    image: '../../public/images/agra-fort.jpg',
+    image: agraFortImage,
     highlights: ['Mughal architecture', 'Jahangir Palace', 'Khas Mahal', 'Diwan-i-Khas'],
     bestTime: 'April to March',
     duration: '2 Nights / 3 Days',
@@ -1255,7 +1273,7 @@ export const places: Place[] = [
     para: 'Spiritual Heart of Sikhism',
     state: 'Punjab',
     description: 'The Golden Temple, also known as Harmandir Sahib, is the holiest shrine of Sikhism. Its stunning golden architecture surrounded by the sacred pool creates a serene and spiritual atmosphere.',
-    image: '../../public/images/golden-temple.jpg',
+    image: goldenTempleImage,
     highlights: ['Golden architecture', 'Langar (community kitchen)', 'Sarovar (sacred pool)', 'Evening ceremony'],
     bestTime: 'April to March',
     duration: '1 Nights / 2 Days',
@@ -1314,7 +1332,7 @@ export const places: Place[] = [
     para: 'Tropical Paradise in the Bay of Bengal',
     state: 'Andaman and Nicobar Islands',
     description: 'The Andaman Islands are a tropical paradise with pristine beaches, crystal-clear waters, and vibrant coral reefs. Perfect for diving, snorkeling, and beach relaxation.',
-    image: '../../public/images/andaman-nicobar.jpg',
+    image: andamanNicobarImage,
     highlights: ['Radhanagar Beach', 'Scuba diving', 'Cellular Jail', 'Coral reefs'],
     bestTime: 'April to March',
     duration: '5 Nights / 7 Days',

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-
+import logo from '../../public/images/tripsiindiaLogo.jpg';
 export function Footer() {
   return (
     <footer className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-300">
@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               {/* <span className="text-orange-600 dark:text-orange-400">✈️</span>
               <span>tripsiIndia</span> */}
-              <img src="../../public/images/tripsiindiaLogo.jpg" alt="logo" className="w-10 h-8" />
+              <img src={logo} alt="logo" className="w-10 h-8" />
 
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm">

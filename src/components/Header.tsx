@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { useTheme } from '../App';
 import { useState } from 'react';
+import logo from '../../public/images/tripsiindiaLogo.jpg';
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();
@@ -15,7 +16,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <img src="../../public/images/tripsiindiaLogo.jpg" alt="logo" className="w-10 h-8" />
+            <img src={logo} alt="logo" className="w-10 h-8" />
             {/* <span className="text-orange-600 dark:text-orange-400">✈️</span>
             <span className="text-gray-900 dark:text-white">tripsiIndia</span> */}
           </Link>
