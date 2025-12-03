@@ -119,12 +119,12 @@ export function PlaceDetail() {
             {/* Package Pricing */}
             <div className="mb-12">
               <h2 className="text-gray-900 dark:text-white mb-6">Package Pricing</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div
                   onClick={() => setSelectedPackage('standard')}
                   className={`cursor-pointer rounded-lg p-6 border-2 transition-all ${selectedPackage === 'standard'
-                      ? 'border-orange-600 dark:border-orange-400 bg-orange-50 dark:bg-orange-900/20'
-                      : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-orange-300 dark:hover:border-orange-600'
+                    ? 'border-orange-600 dark:border-orange-400 bg-orange-50 dark:bg-orange-900/20'
+                    : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-orange-300 dark:hover:border-orange-600'
                     }`}
                 >
                   <h3 className="text-gray-900 dark:text-white mb-2">Standard Package</h3>
@@ -141,8 +141,8 @@ export function PlaceDetail() {
                 <div
                   onClick={() => setSelectedPackage('deluxe')}
                   className={`cursor-pointer rounded-lg p-6 border-2 transition-all ${selectedPackage === 'deluxe'
-                      ? 'border-orange-600 dark:border-orange-400 bg-orange-50 dark:bg-orange-900/20'
-                      : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-orange-300 dark:hover:border-orange-600'
+                    ? 'border-orange-600 dark:border-orange-400 bg-orange-50 dark:bg-orange-900/20'
+                    : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-orange-300 dark:hover:border-orange-600'
                     }`}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -159,7 +159,7 @@ export function PlaceDetail() {
                   </p>
                 </div>
 
-                <div
+                {/* <div
                   onClick={() => setSelectedPackage('luxury')}
                   className={`cursor-pointer rounded-lg p-6 border-2 transition-all ${selectedPackage === 'luxury'
                       ? 'border-orange-600 dark:border-orange-400 bg-orange-50 dark:bg-orange-900/20'
@@ -175,7 +175,7 @@ export function PlaceDetail() {
                   <p className="text-sm text-gray-600 dark:text-gray-400">
                     Premium experience with finest services
                   </p>
-                </div>
+              </div> */}
               </div>
               <div className="mt-6 text-center">
                 <Link
@@ -287,23 +287,25 @@ export function PlaceDetail() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Related Places */}
-      {relatedPlaces.length > 0 && (
-        <section className="py-16 bg-gray-50 dark:bg-gray-800">
-          <div className="container mx-auto px-4">
-            <h2 className="text-gray-900 dark:text-white mb-8 text-center">
-              More Destinations to Explore
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {relatedPlaces.map((relatedPlace) => (
-                <PlaceCard key={relatedPlace.id} place={relatedPlace} />
-              ))}
+      {
+        relatedPlaces.length > 0 && (
+          <section className="py-16 bg-gray-50 dark:bg-gray-800">
+            <div className="container mx-auto px-4">
+              <h2 className="text-gray-900 dark:text-white mb-8 text-center">
+                More Destinations to Explore
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {relatedPlaces.map((relatedPlace) => (
+                  <PlaceCard key={relatedPlace.id} place={relatedPlace} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
-    </div>
+          </section>
+        )
+      }
+    </div >
   );
 }

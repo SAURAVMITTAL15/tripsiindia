@@ -1,7 +1,11 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
 
 export function Contact() {
+  const form = useRef();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,9 +15,19 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock form submission
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    emailjs.sendForm('service_pe473fn', 'template_9ryo6s9', form.current, { publicKey: 'Ca_wPIva1Ixut2ukV', })
+      .then((result) => {
+        alert('Thank you for your message! We will get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    // // Mock form submission
+    // alert('Thank you for your message! We will get back to you soon.');
+    // setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -112,7 +126,7 @@ export function Contact() {
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday:</span>
-                    <span>10:00 AM - 5:00 PM</span>
+                    <span>closed</span>
                   </div>
                 </div>
               </div>
@@ -124,7 +138,7 @@ export function Contact() {
                 <h2 className="text-gray-900 dark:text-white mb-6">
                   Send Us a Message
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} ref={form} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label
