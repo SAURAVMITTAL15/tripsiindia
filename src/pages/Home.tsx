@@ -49,12 +49,12 @@ export function Home() {
                 <span className="text-sm">🌞 {currentPlace.bestTime}</span>
               </div>
             </div>
-            <a
+            {/* <a
               href={`/place/${currentPlace.id}`}
               className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-colors"
             >
               Explore Details
-            </a>
+            </a> */}
           </div>
         </div>
 
