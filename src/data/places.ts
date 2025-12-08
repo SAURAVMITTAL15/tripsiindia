@@ -1,28 +1,86 @@
-import andamanNicobarImage from '../../public/images/andaman-nicobar.jpg';
-import goldenTempleImage from '../../public/images/golden-temple.jpg';
-import agraFortImage from '../../public/images/agra-fort.jpg';
-import shimlaImage from '../../public/images/shimla.jpg';
-import jaisalmerImage from '../../public/images/jaisalmer.jpg';
-import darjeelingImage from '../../public/images/darjeeling.jpg';
-import rishikeshImage from '../../public/images/rishikesh.jpg';
-import ladakhImage from '../../public/images/ladakh.jpg';
-import varanasiImage from '../../public/images/varanasi.jpg';
-import keralaBackwatersImage from '../../public/images/kerala-backwaters.jpg';
-import jaipurImage from '../../public/images/jaipur.jpg';
-import himachalBackpackingImage from '../../public/images/himachal-backpacking.jpg';
-import himachalHoneymoonPocketImage from '../../public/images/himachal-honeymoon-pocket.jpg';
-import himachalCircuitImage from '../../public/images/himachal-circuit.jpg';
-import goaImage from '../../public/images/goa.jpg';
-import udaipurImage from '../../public/images/udaipur.jpg';
-import kashmirImage from '../../public/images/Kashmir.jpg';
+import himachalstudentspecial from '../../public/images/himachal-student-special.jpg';
+import studentmanaliinside1 from '../../public/images/student-manali-inside1.jpg';
+import studentmanaliinside2 from '../../public/images/student-manali-inside2.jpg';
+
 import memorableHimachalImage from '../../public/images/memorable-himachal.jpg';
-import himachalStudentSpecialImage from '../../public/images/Manali.jpg';
+import memorablehimachalinside1 from '../../public/images/memorable-himachal-inside1.jpg';
+import memorablehimachalinside2 from '../../public/images/memorable-himachal-inside2.jpg';
+
+import kashmirImage from '../../public/images/Kashmir.jpg';
+import kashmirinside1 from '../../public/images/kashmir-inside1.jpg';
+import kashmirinside2 from '../../public/images/kashmir-inside2.jpg';
+
+import udaipurImage from '../../public/images/udaipur.jpg';
+import udaipurinside1 from '../../public/images/udaipur-inside1.jpg';
+import udaipurinside2 from '../../public/images/udaipur-inside2.jpg';
+
+import goaImage from '../../public/images/goa.jpg';
+import goainside1 from '../../public/images/goa-inside1.jpg';
+import goainside2 from '../../public/images/goa-inside2.jpg';
+
+import himachalCircuitImage from '../../public/images/himachal-circuit.jpg';
+import himachalcircuitinside1 from '../../public/images/himachal-circuit-indide1.jpg';
+import himachalcircuitinside2 from '../../public/images/himachal-circuit-inside2.jpg';
+
+import himachalHoneymoonPocketImage from '../../public/images/himachal-honeymoon-pocket.jpg';
+import himachalhoneymooninside1 from '../../public/images/himachal-honeymoon-inside1.jpg';
+import himachalhoneymooninside2 from '../../public/images/himachal-honeymoon-inside2.jpg';
+
+import himachalBackpackingImage from '../../public/images/himachal-backpacking.jpg';
+import himachalbackpackinginside1 from '../../public/images/himachal-backpacking-inside1.jpg';
+import himachalbackpackinginside2 from '../../public/images/himachal-backpacking-inside2.jpg';
+
+import jaipurImage from '../../public/images/jaipur.jpg';
+import jaipurinside1 from '../../public/images/jaipur-inside1.jpg';
+import jaipurinside2 from '../../public/images/jaipur-inside2.jpg';
+
+import keralaBackwatersImage from '../../public/images/kerala-backwaters.jpg';
+import keralabackwatersinside1 from '../../public/images/kerala-backwaters-inside1.jpg';
+import keralabackwatersinside2 from '../../public/images/kerala-backwaters-inside2.jpg';
+
+import varanasiImage from '../../public/images/varanasi.jpg';
+import varanasinside1 from '../../public/images/varansi-inside1.jpg';
+import varanasinside2 from '../../public/images/varansi-inside2.jpg';
+
+import ladakhImage from '../../public/images/ladakh.jpg';
+import ladakhinside1 from '../../public/images/ladakh-inside1.jpg';
+import ladakhinside2 from '../../public/images/ladakh-inside2.jpg';
+
+import rishikeshImage from '../../public/images/rishikesh.jpg';
+import rishikeshinside1 from '../../public/images/rishikesh-inside1.jpg';
+import rishikeshinside2 from '../../public/images/rishikesh-inside2.jpg';
+
+import darjeelingImage from '../../public/images/darjeeling.jpg';
+import darjeelinginside1 from '../../public/images/darjeeling-inside1.jpg';
+import darjeelinginside2 from '../../public/images/darjeeling-inside2.jpg';
+
+import jaisalmerImage from '../../public/images/jaisalmer.jpg';
+import jaisalmerinside1 from '../../public/images/jaisalmer-inside1.jpg';
+import jaisalmerinside2 from '../../public/images/jaisalmer-inside2.jpg';
+
+import shimlaImage from '../../public/images/shimla.jpg';
+import shimlainside1 from '../../public/images/shimla-inside1.jpg';
+import shimlainside2 from '../../public/images/shimla-inside2.jpg';
+
+import agraFortImage from '../../public/images/agra-fort.jpg';
+import agrafortinside1 from '../../public/images/agra-fort-inside1.jpg';
+import agrafortinside2 from '../../public/images/agra-fort-inside2.jpg';
+
+import goldenTempleImage from '../../public/images/golden-temple.jpg';
+import goldentempleinside1 from '../../public/images/golden-temple-inside1.jpg';
+import goldentempleinside2 from '../../public/images/golden-temple-inside2.jpg';
+
+import andamanNicobarImage from '../../public/images/andaman-nicobar.jpg';
+import andamannicobarinside1 from '../../public/images/andaman-nicobar-inside1.jpg';
+import andamannicobarinside2 from '../../public/images/andaman-nicobar-inside2.jpg';
 export interface Place {
   id: string;
   name: string;
   state: string;
   startingRate: string;
   para: string;
+  image1: string;
+  image2: string;
   description: string;
   image: string;
   highlights: string[];
@@ -51,7 +109,7 @@ export const places: Place[] = [
     startingRate: '6999/person',
     para: "Hill Stations & Valleys",
     description: 'Kullu, Manali, Shimla, Kasol, Kufri, Rohtang Pass, Hadimba Temple',
-    image: himachalStudentSpecialImage,
+    image: himachalstudentspecial,
     highlights: ['SnowFall', 'Vashisht Temple', 'Fagu Valley', 'Mall Road', 'Church'],
     bestTime: 'April to March',
     duration: '5 Nights / 6 Days',
@@ -60,6 +118,8 @@ export const places: Place[] = [
       deluxe: 7999,
       luxury: 7999,
     },
+    image1: studentmanaliinside1,
+    image2: studentmanaliinside2,
     inclusions: ['Hotels', 'Sightseeing', 'A.C Traveller (AC not allow in mountain)', 'Campus (Swiss Camps)', 'Meal (Breakfast and Dinner)', 'DJ Night | Bonfire', 'Tour Captain'],
     exclusions: ['Optional Tours', 'Extra Meals', 'Any Kind of Drinks', 'Illness, RoadBlocks or any factors which beyond control', 'Not mention in inclusion'],
     itinerary: [
@@ -77,27 +137,27 @@ export const places: Place[] = [
       },
       {
         day: 3,
-        title: 'Kullu to Kasol',
+        title: 'Manali Local Sightseeing',
         description: 'Pine forests & Israeli cafés',
-        activities: ['Visit Kullu Shawl Factory', 'River rafting (optional)', 'Kasol market walk', 'Café hopping (Evergreen, Stone Garden)'],
+        activities: ['Hidimba Devi Temple', 'Vashisht Hot Water Spring', 'Van Vihar Forest', 'Old Manali Café Street', 'Club House', 'Tibetan Monastery'],
       },
       {
         day: 4,
-        title: 'Kasol to Shimla',
-        description: 'Slowly entering the colonial hills of Shimla',
-        activities: ['Long travel day', 'Relaxed evening at The Mall Road'],
+        title: 'Manali to Kasol',
+        description: 'Pine forests & Israeli cafés',
+        activities: ['Beas River', 'Parvati Valley', 'Parvati River', 'River rafting (optional)'],
       },
       {
         day: 5,
-        title: 'Kufri Snow Point',
-        description: 'Himalayan snow views from the top',
-        activities: ['Horse ride or jeep ride to Mahasu Peak', 'Snow skiing (seasonal)', 'Photos at Himalayan Nature Park'],
+        title: 'Kasol Local Sightseeing',
+        description: 'The most peaceful and picturesque landscapes of Himachal',
+        activities: ['Kasol Market & Café Street', 'Café hopping (Evergreen, Stone Garden)', 'Manikaran Sahib Gurudwara (4 km)', 'Trekking to Chalal village (optional)'],
       },
       {
         day: 6,
-        title: 'Shimla Sightseeing Departure TO Delhi',
-        description: 'Explore the Shimla Sightseeing',
-        activities: ['Jakhu Temple (monkey point & views)', 'Christ Church', 'Mall Road', 'Scandal Point', 'Ridge Viewpoint'],
+        title: 'Reach Delhi',
+        description: 'Tour Ends With Beautiful Memories',
+        activities: ['Tour Ends With Beautiful Memories'],
       },
     ],
   },
@@ -117,6 +177,8 @@ export const places: Place[] = [
       deluxe: 10999,
       luxury: 10999,
     },
+    image1: memorablehimachalinside1,
+    image2: memorablehimachalinside2,
     inclusions: ['DJ and bornfire activities', 'All transfers from Delhi by Tempo traveller', '1 night stay in Shimla', '2 nights stay in Manali', 'Early check-ins at Manali (subject to availability)', '3 Breakfasts / 4 Dinners / 1 Langars', 'Trip captain', 'All Sightseeing'],
     exclusions: ['Personal Expenses', 'Food during Transit', 'Alcohol or any beverages', 'Adventure Activities', 'Entry ticket any garden or parks or any kind of entry ticket', 'Early check-in or late check-out at hotels (subject to availability and hotel policy)'
       , 'Anything not specifically mentioned under “Inclusions"'
@@ -163,7 +225,7 @@ export const places: Place[] = [
   {
     id: 'kashmir',
     name: 'Kashmir - Paradise on Earth',
-    state: 'Jambu & Kashmir',
+    state: 'Jammu & Kashmir',
     startingRate: '12499/person',
     para: 'Experience the Magic of Kashmir',
     description: 'Get ready to experience the magic of Kashmir, often known as "Paradise on Earth." This unforgettable journey will take you through breathtaking landscapes, serene lakes, lush valleys, and historic wonders that will leave you in awe. Imagine starting your day with a peaceful shikara ride on the beautiful Dal Lake, watching the morning sun reflect off the still waters. Stroll through vibrant local markets filled with colorful handicrafts, spices, and the warm smiles of the Kashmiri people. Explore charming hill stations, wander through flower-filled gardens, and soak in the pure mountain air. Along the way, you\'ll discover the rich heritage, culture, and traditions that make Kashmir truly unique. Whether you’re seeking adventure, looking to connect with nature, or simply wanting a peaceful escape, this journey offers the perfect blend of it all. Come, lose yourself in the timeless beauty of Kashmir — an experience you\'ll treasure forever.',
@@ -176,12 +238,14 @@ export const places: Place[] = [
       deluxe: 13499,
       luxury: 13499,
     },
+    image1: kashmirinside1,
+    image2: kashmirinside2,
     inclusions: ['Comfortable hotel stays throughout the trip', 'Meals as per the itinerary', 'Sightseeing tours and activities', 'Private/shared transport for all transfers', 'Experienced tour guide services'],
     exclusions: ['Personal expenses like shopping, snacks, and additional meals.', 'Entry fees to specific attractions and adventure activities.', 'Travel insurance, medical costs, or emergency evacuation expenses.', 'Personal expenses like shopping, snacks, and additional meals.', 'Entry fees to specific attractions and adventure activities.', 'Anything not mentioned under "Inclusions."'],
     itinerary: [
       {
         day: 1,
-        title: 'Delhi to Srinagar',
+        title: 'Pickup Srinagar',
         description: 'Explore the Srinagar View',
         activities: ['Dal Lake Shikara Ride', 'Nishat Garden (Garden of Joy)', 'Shalimar Bagh', 'Chashme Shahi', 'Zabarwan Mountain Views'],
       },
@@ -211,7 +275,7 @@ export const places: Place[] = [
       },
       {
         day: 6,
-        title: 'Reach Delhi',
+        title: 'Reach Srinagar',
         description: 'Tour Ends With Beautiful Memories',
         activities: ['Tour Ends With Beautiful Memories'],
       },
@@ -233,6 +297,8 @@ export const places: Place[] = [
       deluxe: 8999,
       luxury: 8999,
     },
+    image1: udaipurinside1,
+    image2: udaipurinside2,
     inclusions: [
       '2 nights heritage hotel stay',
       'Daily breakfast',
@@ -297,6 +363,8 @@ export const places: Place[] = [
       deluxe: 13999,
       luxury: 13999,
     },
+    image1: goainside1,
+    image2: goainside2,
     inclusions: ['3 Breakfast Included', '1 Dinner Included at Cruise', '1 Night stay in Resort', '2 Night stay in Hotel', '1 Day NorthGoa Sightseeing (PVT)', '1 Day South Goa Sightseeing (PVT)', '1 Day Panjim Sightseeing (PVT)', 'Airport / Bus / Railways Transfers (except Madgaon & Vasco)', 'Complimentary Use of Swimming pool'],
     exclusions: ['Airfare / Train fare / Bus fare to and from Goa', 'Any meals and drinks other than those mentioned in the itinerary', 'Personal expenses such as laundry, telephone calls, room service, and beverages', 'Any kind of tips, porterage, and gratuities', 'Travel insurance', 'Any sightseeing or activities not mentioned in the inclusion', 'Early check-in or late check-out at hotels (subject to availability and hotel policy)', 'Anything not specifically mentioned under “Inclusions”'],
     itinerary: [
@@ -353,7 +421,7 @@ export const places: Place[] = [
       },
       {
         day: 5,
-        title: 'Departure',
+        title: 'Departure via Airport / Railway Station',
         description: 'Last beach moments before departure.',
         activities: [
           'Morning beach walk',
@@ -380,6 +448,8 @@ export const places: Place[] = [
       deluxe: 18499,
       luxury: 18499,
     },
+    image1: himachalcircuitinside1,
+    image2: himachalcircuitinside2,
     inclusions: ['DJ and bornfire activities', 'All transfers from Delhi by Tempo traveller', '2 night stay in Shimla', '2 nights stay in Manali', '2 Nights stay in Dharamshala', '1 Night stay in Dalhousie', '1 Night stay in Kasol', 'Early check-ins at Manali (subject to availability)', 'Breakfast, dinner, and langars as per itinerary', 'Trip captain', 'All Sightseeing'],
     exclusions: ['Personal Expenses', 'Any cost arising due to Natural Calamities like Landslide, Road Blocks, Accidents etc (To be borne by client directly on the spot)', 'Food during Transit', 'Alcohol or any beverages', 'Adventure Activities', 'Entry ticket any garden or parks or any kind of entry ticket', 'Early check-in or late check-out at hotels (subject to availability and hotel policy)', 'Anything not specifically mentioned under “Inclusions”'],
     itinerary: [
@@ -456,20 +526,22 @@ export const places: Place[] = [
       deluxe: 34499,
       luxury: 34499,
     },
+    image1: himachalhoneymooninside1,
+    image2: himachalhoneymooninside2,
     inclusions: ['DJ and bornfire activities', 'All transfers from Delhi by private car', '1 Night stay in Kasol', '3 Night stay in Manali', 'Early check-ins at Manali (IF ROOMS ARE AVAILABLE)', '4 Breakfast /4 Dinner', 'Toll, Parking and Transport Taxes', 'All Sightseeing'],
     exclusions: ['Personal Expenses', 'Food during Transit', 'Alcohol or any beverages', 'Adventure Activities', 'Entry ticket any garden or parks or any kind of entry ticket', 'Early check-in or late check-out at hotels (subject to availability and hotel policy)', 'Anything not specifically mentioned under “Inclusions”'],
     itinerary: [
       {
         day: 1,
-        title: 'Delhi to Kasol (550–600 km / 12–13 hrs)',
-        description: 'Explore the Kasol View',
-        activities: ['Morning 10 AM departure from Delhi to Shimla', 'Night arrival in Shimla', 'Check-in, relax, dinner & overnight stay at hotel'],
+        title: 'Delhi to Manali',
+        description: 'Explore the Manali View',
+        activities: ['Morning 10 AM departure from Delhi to Manali', 'Night arrival in Manali', 'Check-in, relax, dinner & overnight stay at hotel'],
       },
       {
         day: 2,
-        title: 'Kasol to Kullu to Manali (90–100 km / 4–5 hrs)',
-        description: 'Explore the Kufri View',
-        activities: ['Parvati River view (Kasol)', 'Kullu Shawl Factory', 'Kullu Rafting Point (optional)', 'Beas River viewpoint'],
+        title: 'Manali Local Sightseeing',
+        description: 'Pine forests & Israeli cafés',
+        activities: ['Hadimba Devi Temple', 'Van Vihar', 'Club House', 'Vashisht Hot Spring', 'Tibetan Monastery', 'Mall Road (shopping & cafés)'],
       },
       {
         day: 3,
@@ -479,12 +551,18 @@ export const places: Place[] = [
       },
       {
         day: 4,
-        title: 'Manali Local Sightseeing',
-        description: 'Pine forests & Israeli cafés',
-        activities: ['Hadimba Devi Temple', 'Van Vihar', 'Club House', 'Vashisht Hot Spring', 'Tibetan Monastery', 'Mall Road (shopping & cafés)'],
+        title: 'Manali to Kasol via Kullu',
+        description: 'Explore the Kasol View',
+        activities: ['Parvati River view (Kasol)', 'Kullu Shawl Factory', 'Kullu Rafting Point (optional)', 'Beas River viewpoint'],
       },
       {
         day: 5,
+        title: 'Kasol Sightseeing',
+        description: 'The most peaceful and picturesque landscapes of Himachal',
+        activities: ['Kasol market & café street', 'German/Israeli cafés', 'Riverside walk'],
+      },
+      {
+        day: 6,
         title: 'Manali to Delhi',
         description: 'Tour Ends With Beautiful Memories',
         activities: ['Morning departure from Manali to Delhi', 'Enjoy scenic views along the way', 'Evening arrival at Delhi', 'Tour Ends With Beautiful Memories'],
@@ -507,7 +585,9 @@ export const places: Place[] = [
       deluxe: 13999,
       luxury: 13999,
     },
-    inclusions: ['DJ and bornfire activities', 'All transfers from Delhi by Tempo traveller', '2 night stay in Shimla', '2 nights stay in Manali', '2 Nights stay in Dharamshala', '1 Night stay in Dalhousie', '1 Night stay in Kasol', 'Early check-ins at Manali (subject to availability)', 'Breakfast, dinner, and langars as per itinerary', 'Trip captain', 'All Sightseeing'],
+    image1: himachalbackpackinginside1,
+    image2: himachalbackpackinginside2,
+    inclusions: ['DJ and bornfire activities', 'All transfers from Delhi by Tempo traveller', '1 night stay in Shimla', '2 nights stay in Manali', '1 Night stay in Dalhousie', 'Overnight journey in Kasol', 'Early check-ins at Manali (subject to availability)', 'Breakfast, dinner, and langars as per itinerary', 'Trip captain', 'All Sightseeing'],
     exclusions: ['Personal Expenses', 'Any cost arising due to Natural Calamities like Landslide, Road Blocks, Accidents etc (To be borne by client directly on the spot)', 'Food during Transit', 'Alcohol or any beverages', 'Adventure Activities', 'Entry ticket any garden or parks or any kind of entry ticket', 'Early check-in or late check-out at hotels (subject to availability and hotel policy)', 'Anything not specifically mentioned under “Inclusions”'],
     itinerary: [
       {
@@ -576,6 +656,8 @@ export const places: Place[] = [
       deluxe: 5999,
       luxury: 5999,
     },
+    image1: jaipurinside1,
+    image2: jaipurinside2,
     inclusions: [
       '2 nights accommodation with breakfast',
       'All monument entrance fees',
@@ -655,6 +737,8 @@ export const places: Place[] = [
       'Sightseeing as per itinerary',
       'All taxes and service charges',
     ],
+    image1: keralabackwatersinside1,
+    image2: keralabackwatersinside2,
     exclusions: [
       'Airfare/train tickets',
       'Alcoholic beverages',
@@ -721,6 +805,8 @@ export const places: Place[] = [
       deluxe: 6999,
       luxury: 6999,
     },
+    image1: varanasinside1,
+    image2: varanasinside2,
     inclusions: [
       '2 nights hotel accommodation',
       'Daily breakfast',
@@ -792,8 +878,10 @@ export const places: Place[] = [
       deluxe: 16999,
       luxury: 16999,
     },
+    image1: ladakhinside1,
+    image2: ladakhinside2,
     inclusions: [
-      '6 nights accommodation',
+      '5 nights accommodation',
       'All meals (breakfast, lunch, dinner)',
       'Leh airport transfers',
       'Inner line permits',
@@ -872,21 +960,21 @@ export const places: Place[] = [
           'Return to Leh hotel',
         ],
       },
+      // {
+      //   day: 6,
+      //   title: 'Monastery Circuit',
+      //   description: 'Explore ancient Buddhist monasteries.',
+      //   activities: [
+      //     'Visit Alchi Monastery',
+      //     'Likir Monastery',
+      //     'Basgo Palace ruins',
+      //     'Local village interaction',
+      //     'Shopping for handicrafts',
+      //     'Farewell dinner',
+      //   ],
+      // },
       {
         day: 6,
-        title: 'Monastery Circuit',
-        description: 'Explore ancient Buddhist monasteries.',
-        activities: [
-          'Visit Alchi Monastery',
-          'Likir Monastery',
-          'Basgo Palace ruins',
-          'Local village interaction',
-          'Shopping for handicrafts',
-          'Farewell dinner',
-        ],
-      },
-      {
-        day: 7,
         title: 'Departure',
         description: 'Depart with memories of the mountains.',
         activities: [
@@ -913,6 +1001,8 @@ export const places: Place[] = [
       deluxe: 6999,
       luxury: 6999,
     },
+    image1: rishikeshinside1,
+    image2: rishikeshinside2,
     inclusions: [
       '3 nights ashram/hotel stay',
       'Daily vegetarian meals',
@@ -999,6 +1089,8 @@ export const places: Place[] = [
       deluxe: 12999,
       luxury: 12999,
     },
+    image1: darjeelinginside1,
+    image2: darjeelinginside2,
     inclusions: [
       '3 nights hotel accommodation',
       'All meals included',
@@ -1084,6 +1176,8 @@ export const places: Place[] = [
       deluxe: 8999,
       luxury: 8999,
     },
+    image1: jaisalmerinside1,
+    image2: jaisalmerinside2,
     inclusions: [
       '2 nights accommodation (1 hotel + 1 desert camp)',
       'All meals',
@@ -1160,6 +1254,8 @@ export const places: Place[] = [
       deluxe: 5999,
       luxury: 5999,
     },
+    image1: shimlainside1,
+    image2: shimlainside2,
     inclusions: [
       '2 nights hotel accommodation',
       'Daily breakfast',
@@ -1234,6 +1330,8 @@ export const places: Place[] = [
       deluxe: 4999,
       luxury: 4999,
     },
+    image1: agrafortinside1,
+    image2: agrafortinside2,
     inclusions: [
       'Agra Fort entry fee',
       'Professional guide',
@@ -1282,6 +1380,8 @@ export const places: Place[] = [
       deluxe: 5999,
       luxury: 5999,
     },
+    image1: goldentempleinside1,
+    image2: goldentempleinside2,
     inclusions: [
       '1 night accommodation',
       'Daily breakfast',
@@ -1341,6 +1441,8 @@ export const places: Place[] = [
       deluxe: 27999,
       luxury: 27999,
     },
+    image1: andamannicobarinside1,
+    image2: andamannicobarinside2,
     inclusions: [
       '6 nights accommodation',
       'Daily breakfast',

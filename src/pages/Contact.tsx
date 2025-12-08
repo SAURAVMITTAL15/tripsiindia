@@ -106,7 +106,7 @@ export function Contact() {
                   <div>
                     <h3 className="text-gray-900 dark:text-white mb-1">Email</h3>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">
-                      Tripsiindia@gmail.com
+                      tripsiindia@gmail.com
                     </p>
                   </div>
                 </div>

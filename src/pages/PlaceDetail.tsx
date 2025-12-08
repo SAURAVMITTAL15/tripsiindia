@@ -50,7 +50,7 @@ export function PlaceDetail() {
               <ChevronLeft className="w-5 h-5" />
               <span>Back to Destinations</span>
             </Link>
-            <h1 className="text-white mb-4">{place.name}</h1>
+            <h1 className="text-white mb-4 text-4xl">{place.name}</h1>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg text-white">
                 <MapPin className="w-5 h-5" />
@@ -176,6 +176,15 @@ export function PlaceDetail() {
                     Premium experience with finest services
                   </p>
               </div> */}
+              </div>
+
+              <div className="mb-12">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <img className="flex items-center justify-between mb-2 rounded-lg" src={place.image1} alt={place.name} />
+                    <img className="w-1/2 rounded-lg" src={place.image2} alt={place.name} />
+                  </div>
+                </div>
               </div>
               <div className="mt-6 text-center">
                 <Link

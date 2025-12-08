@@ -72,15 +72,15 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  to="/place/taj-mahal"
+                  to={`/place/${'udaipur'}`}
                   className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                 >
-                  Taj Mahal
+                  Udaipur
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/place/jaipur"
+                  to={`/place/${'jaipur'}`}
                   className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                 >
                   Jaipur
@@ -88,7 +88,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/place/goa"
+                  to={`/place/${'goa'}`}
                   className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                 >
                   Goa
@@ -96,7 +96,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/place/kerala-backwaters"
+                  to={`/place/${'kerala-backwaters'}`}
                   className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                 >
                   Kerala Backwaters
@@ -121,7 +121,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-orange-600 dark:text-orange-400 flex-shrink-0" />
-                <span className="text-gray-600 dark:text-gray-400">Tripsiindia@gmail.com</span>
+                <span className="text-gray-600 dark:text-gray-400">tripsiindia@gmail.com</span>
               </li>
             </ul>
           </div>
