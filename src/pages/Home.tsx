@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Link } from 'lucide-react';
 import { PlaceCard } from '../components/PlaceCard';
 import { places } from '../data/places';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';

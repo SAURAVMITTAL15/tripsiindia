@@ -60,5 +60,11 @@
             "build:dev": "vite build --mode development",
             "lint": "eslint .",
             "preview": "vite preview"
-      }
+      },
+      "rewrites": [
+            {
+                  "source": "/(.*)",
+                  "destination": "/index.html"
+            }
+      ]
 }
