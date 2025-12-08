@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Link } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { PlaceCard } from '../components/PlaceCard';
 import { places } from '../data/places';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { Link } from 'react-router-dom';
 
 export function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,12 +49,12 @@ export function Home() {
               <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span className="text-sm">🌞 {currentPlace.bestTime}</span>
               </div> */}
-              <a
-                href={`/place/${currentPlace.id}`}
+              <Link
+                to={`/place/${currentPlace.id}`}
                 className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-colors"
               >
                 Explore Details
-              </a>
+              </Link>
             </div>
           </div>
         </div>
