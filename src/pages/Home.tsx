@@ -42,26 +42,26 @@ export function Home() {
               <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span className="text-sm">📍 {currentPlace.state}</span>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+              {/* <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span className="text-sm">⏱️ {currentPlace.duration}</span>
               </div>
               <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span className="text-sm">🌞 {currentPlace.bestTime}</span>
-              </div>
+              </div> */}
+              <a
+                href={`/place/${currentPlace.id}`}
+                className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-colors"
+              >
+                Explore Details
+              </a>
             </div>
-            {/* <a
-              href={`/place/${currentPlace.id}`}
-              className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-colors"
-            >
-              Explore Details
-            </a> */}
           </div>
         </div>
 
         {/* Carousel Controls */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 rounded-full transition-all"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 backdrop-blur-sm text-white p-3 rounded-full transition-all"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-6 h-6" />
